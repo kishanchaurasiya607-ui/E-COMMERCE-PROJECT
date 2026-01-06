@@ -26,7 +26,7 @@ const Footer = () => {
                         your notes/information privately and securely without any
                         disturbancee <br />
                         Created by <span className="text-rose-500 font-semibold">
-                            Sanjay Kumar Singh
+                            KISHAN CHAURASIYA
                         </span>
                     </p>
                 </div>
