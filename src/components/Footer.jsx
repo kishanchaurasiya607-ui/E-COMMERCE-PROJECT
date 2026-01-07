@@ -75,7 +75,7 @@ const Footer = () => {
                         <div className="uppercase text-gray-900  dark:text-gray-100">Social media</div>
                         <div className="flex justify-start space-x-3">
                             <a
-                                href="https://github.com/"
+                                href="https://github.com/kishanchaurasiya607-ui"
                                 target="_blank"
                                 title="GitHub"
                                 className="flex items-center justify-center w-10 h-10 rounded-full"
