@@ -43,17 +43,7 @@ function SideBar({ open, setOpen, navigate }) {
           </h1>
         </div>
         <ul className="space-y-2 py-4 ">
-          <li>
-            <Link
-              to="/mynotes" onClick={() => {
-                setOpen(false);
-              }}
-              className="block py-2 pl-7 font-semibold text-sm text-gray-700 hover:bg-gray-200 dark:text-gray-200 dark:hover:bg-gray-800"
-            >
-              Your Notes
-            </Link>
-          </li>
-          <li>
+           <li>
             <Link
               to="/profile" onClick={() => {
                 setOpen(false);
@@ -63,6 +53,77 @@ function SideBar({ open, setOpen, navigate }) {
               Profile
             </Link>
           </li>
+          <li>
+            <Link
+              to="/mynotes" onClick={() => {
+                setOpen(false);
+              }}
+              className="block py-2 pl-7 font-semibold text-sm text-gray-700 hover:bg-gray-200 dark:text-gray-200 dark:hover:bg-gray-800"
+            >
+              Menu
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/mynotes" onClick={() => {
+                setOpen(false);
+              }}
+              className="block py-2 pl-7 font-semibold text-sm text-gray-700 hover:bg-gray-200 dark:text-gray-200 dark:hover:bg-gray-800"
+            >
+              Products
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/mynotes" onClick={() => {
+                setOpen(false);
+              }}
+              className="block py-2 pl-7 font-semibold text-sm text-gray-700 hover:bg-gray-200 dark:text-gray-200 dark:hover:bg-gray-800"
+            >
+              Items
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/mynotes" onClick={() => {
+                setOpen(false);
+              }}
+              className="block py-2 pl-7 font-semibold text-sm text-gray-700 hover:bg-gray-200 dark:text-gray-200 dark:hover:bg-gray-800"
+            >
+              Add Cart
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/mynotes" onClick={() => {
+                setOpen(false);
+              }}
+              className="block py-2 pl-7 font-semibold text-sm text-gray-700 hover:bg-gray-200 dark:text-gray-200 dark:hover:bg-gray-800"
+            >
+              Shopping Detail
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/mynotes" onClick={() => {
+                setOpen(false);
+              }}
+              className="block py-2 pl-7 font-semibold text-sm text-gray-700 hover:bg-gray-200 dark:text-gray-200 dark:hover:bg-gray-800"
+            >
+              Orders
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/mynotes" onClick={() => {
+                setOpen(false);
+              }}
+              className="block py-2 pl-7 font-semibold text-sm text-gray-700 hover:bg-gray-200 dark:text-gray-200 dark:hover:bg-gray-800"
+            >
+              Payment Details
+            </Link>
+          </li>
+          
           <li>
           </li>
           <li className="text-center absolute bottom-10 w-full">

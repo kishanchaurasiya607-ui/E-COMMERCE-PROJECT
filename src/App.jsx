@@ -15,6 +15,22 @@ import { useTheme } from './context/ThemeState'
 import authContext from './context/authContext'
 import Profile from './page/Profile'
 import MyNotes from './page/MyNotes'
+import BannerSlider from "./page/BannerSlider";
+import BestDeals from "./page/BestDeals"
+import BigDeal from "./page/BigDealsSection"
+import AppliancesSection from "./page/AppliancesSection"
+import DealsSection from "./page/DealsSection"
+import DealsSmart from "./DealsSmart"
+import Minutes from './Items/Minutes';
+import Mobiles from './Items/Mobiles'
+import TVs from './Items/TVs&Appliances'
+import Kitchen from './Items/Home&Kitchen'
+import Beauty from './Items/Beauty&toys'
+import Electronics from './Items/Electronics'
+import Fashion from './Items/Fashion'
+import Furniture from './Items/Furniture'
+import Grocery from './Items/Grocery'
+import Flight from './Items/FlightBookings'
 function App() {
 
   const { theme } = useTheme()
@@ -45,7 +61,17 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path='/' element={<Home />} />
+       <Route path="/" element={<> <Home />  <BannerSlider /> <BestDeals />  <BigDeal/> <AppliancesSection/> <DealsSection/> <DealsSmart/> </> }/>
+       <Route path="/minutes" element={<Minutes />} />
+       <Route path="/Mobiles" element={<Mobiles />} />
+       <Route path="/Fashion" element={<Fashion />} />
+       <Route path="/TVs&Appliances" element={<TVs />} />
+       <Route path="/Home&Kitchen" element={<Kitchen />} />
+       <Route path="/Beauty&toys" element={<Beauty />} />
+       <Route path="/Electronics" element={<Electronics />} />
+       <Route path="/Furniture" element={<Furniture />} />
+       <Route path="/FlightBookings" element={<Flight />} />
+       <Route path="/Grocery" element={<Grocery />} />
         <Route path='/notes' element={<Notes />} />
         <Route path='/mynotes' element={<MyNotes />} />
         <Route path='/profile' element={<Profile />} />

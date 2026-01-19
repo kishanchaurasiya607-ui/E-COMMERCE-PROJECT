@@ -1,74 +1,145 @@
 import { Link } from "react-router-dom";
-import Reviews from "../components/Reviews";
+const CategorySection = () => {
+  return (
+   <div className="bg-white border-b">
+  <div className="max-w-7xl mx-auto px-4 py-4">
+    <div className="flex items-center justify-between gap-6 overflow-x-auto scrollbar-hide">
 
-const Home = () => {
-    return (
-        <section className="bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-gray-100">
-            <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
-                <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-                    <h1 className="text-5xl font-bold leading-none sm:text-6xl">
-                        <span className="dark:text-rose-600">my</span>NoteBook
-                    </h1>
-                    <p className="text-2xl mt-7 font-bold">
-                        Your Notebook on Cloud - Safe and Secure
-                    </p>
-                    <p className="mt-6 mb-8 text-lg sm:mb-12">
-                        An online web platform where you can create, edit, upload, delete
-                        your notes/information privately and securely without any
-                        disturbancee. For more info you can checkout our
-                    </p>
-                    <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-                        <Link
-                            to="/createnote"
-                            className="px-8 py-3 text-lg font-semibold rounded dark:bg-rose-600 dark:text-gray-50"
-                        >
-                            Create Notes
-                        </Link>
-                        {/* <a to="/login" className="px-8 py-3 text-lg font-semibold rounded dark:bg-rose-600 dark:text-gray-50">Get Started</a> */}
-                        <Link
-                            to="/about"
-                            className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-800"
-                        >
-                            Read More
-                        </Link>
-                    </div>
-                </div>
-                <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-                    <img
-                        src="https://itsnotebookapp.netlify.app/assets/Bullet_journal-CLlBznnH.png"
-                        alt=""
-                        className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
-                    />
-                </div>
-            </div>
-            <Reviews />
-            <div className="mx-auto py-6 max-w-md">
-                <strong className="block text-center text-xl font-bold  text-gray-900 dark:text-gray-100 sm:text-3xl">
-                    Subscribe now for ore Updates
-                </strong>
+      <Link to="/minutes">
+      <a  className="flex flex-col items-center min-w-[90px] cursor-pointer group">
+        <img
+          src="src/assets/istockphoto-1095986116-612x612.jpg"
+          alt="Minutes"
+          className="w-16 h-16 rounded-xl object-cover transition-transform duration-300 group-hover:scale-110"
+        />
+        <p className="mt-2 text-sm font-medium text-gray-900 group-hover:text-blue-600 text-center whitespace-nowrap">
+          Minutes
+        </p>
+      </a>
+      </Link>
 
-                <form className="mt-6 px-6">
-                    <div className="relative max-w-lg">
-                        <label className="sr-only" htmlFor="email">
-                            {" "}
-                            Email{" "}
-                        </label>
+     <Link to="/Mobiles">
+      <a href="src/Items/Mobiles.jsx" className="flex flex-col items-center min-w-[90px] cursor-pointer group">
+        <img
+          src="src/assets/phone.jpg"
+          alt="Mobiles"
+          className="w-16 h-16 rounded-xl object-cover transition-transform duration-300 group-hover:scale-110"
+        />
+        <p className="mt-2 text-sm font-medium text-gray-900 group-hover:text-blue-600 text-center whitespace-nowrap">
+          Mobiles
+        </p>
+      </a>
+      </Link>
 
-                        <input
-                            className="w-full outline-none border rounded-full border-gray-200 text-gray-900 bg-gray-100 p-4 pe-32 text-sm font-medium"
-                            id="email"
-                            type="email"
-                            placeholder="john@doe.com"
-                        />
+      <Link to="/TVs&Appliances">
+      <a href="src/Items/TVs&Appliances.jsx" className="flex flex-col items-center min-w-[90px] cursor-pointer group">
+        <img
+          src="src/assets/453f15256e53bf18c80fb77021e3ccf8.jpg"
+          alt="TVs & Appliances"
+          className="w-16 h-16 rounded-xl object-cover transition-transform duration-300 group-hover:scale-110"
+        />
+        <p className="mt-2 text-sm font-medium text-gray-900 group-hover:text-blue-600 text-center whitespace-nowrap">
+          TVs & Appliances
+        </p>
+      </a>
+      </Link>
 
-                        <button className="absolute end-1 top-1/2 -translate-y-1/2 rounded-full bg-rose-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-rose-700">
-                            Subscribe
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </section>
-    );
+      <Link to="/Electronics">
+      <a href="src/Items/Electronics.jsx" className="flex flex-col items-center min-w-[90px] cursor-pointer group">
+        <img
+          src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/69c6589653afdb9a.png"
+          alt="Electronics"
+          className="w-16 h-16 rounded-xl object-cover transition-transform duration-300 group-hover:scale-110"
+        />
+        <p className="mt-2 text-sm font-medium text-gray-900 group-hover:text-blue-600 text-center whitespace-nowrap">
+          Electronics
+        </p>
+      </a>
+      </Link>
+
+     <Link to="/Fashion">
+      <a href="src/Items/Fashion.jsx" className="flex flex-col items-center min-w-[90px] cursor-pointer group">
+        <img
+          src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/0d75b34f7d8fbcb3.png"
+          alt="Fashion"
+          className="w-16 h-16 rounded-xl object-cover transition-transform duration-300 group-hover:scale-110"
+        />
+        <p className="mt-2 text-sm font-medium text-gray-900 group-hover:text-blue-600 text-center whitespace-nowrap">
+          Fashion
+        </p>
+      </a>
+      </Link>
+
+     <Link to="/Beauty&toys">
+      <a href="src/Items/Beauty&toys.jsx" className="flex flex-col items-center min-w-[90px] cursor-pointer group">
+        <img
+          src="src/assets/download.jpg"
+          alt="Beauty & toys"
+          className="w-16 h-16 rounded-xl object-cover transition-transform duration-300 group-hover:scale-110"
+        />
+        <p className="mt-2 text-sm font-medium text-gray-900 group-hover:text-blue-600 text-center whitespace-nowrap">
+          Beauty & toys
+        </p>
+      </a>
+      </Link>
+
+      <Link to="/Furniture">
+      <a href="src/Items/Furniture.jsx" className="flex flex-col items-center min-w-[90px] cursor-pointer group">
+        <img
+          src="src/assets/images.jpg"
+          alt="Furniture"
+          className="w-16 h-16 rounded-xl object-cover transition-transform duration-300 group-hover:scale-110"
+        />
+        <p className="mt-2 text-sm font-medium text-gray-900 group-hover:text-blue-600 text-center whitespace-nowrap">
+          Furniture
+        </p>
+      </a>
+      </Link>
+      
+      <Link to="/Home&Kitchen">
+      <a href="src/Items/Home&Kitchen.jsx" className="flex flex-col items-center min-w-[90px] cursor-pointer group">
+        <img
+          src="src/assets/edc100124gambrel-006-66e0bc34ac150.avif"
+          alt="Home & Kitchen"
+          className="w-16 h-16 rounded-xl object-cover transition-transform duration-300 group-hover:scale-110"
+        />
+        <p className="mt-2 text-sm font-medium text-gray-900 group-hover:text-blue-600 text-center whitespace-nowrap">
+          Home & Kitchen
+        </p>
+      </a>
+      </Link>
+      
+      <Link to="/FlightBookings">
+      <a href="src/Items/FlightBookings.jsx" className="flex flex-col items-center min-w-[90px] cursor-pointer group">
+        <img
+          src="src/assets/pngtree-d-illustration-of-airline-booking-app-for-buying-tickets-or-checking-image_3792552.jpg"
+          alt="Flight Bookings"
+          className="w-16 h-16 rounded-xl object-cover transition-transform duration-300 group-hover:scale-110"
+        />
+        <p className="mt-2 text-sm font-medium text-gray-900 group-hover:text-blue-600 text-center whitespace-nowrap">
+         Flight Bookings
+        </p>
+      </a>
+      </Link>
+
+      <Link to="/Grocery">
+      <a href="src/Items/Grocery.jsx" className="flex flex-col items-center min-w-[90px] cursor-pointer group">
+        <img
+          src="src/assets/download (1).jpg"
+          alt="Grocery"
+          className="w-16 h-16 rounded-xl object-cover transition-transform duration-300 group-hover:scale-110"
+        />
+        <p className="mt-2 text-sm font-medium text-gray-900 group-hover:text-blue-600 text-center whitespace-nowrap">
+          Grocery
+        </p>
+      </a>
+       </Link>
+    </div>
+  </div>
+</div>
+
+    
+  );
 };
 
-export default Home;
+export default CategorySection;
