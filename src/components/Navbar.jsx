@@ -36,7 +36,7 @@ const Navbar = () => {
       <div>
   <SideBar open={open} setOpen={setOpen} navigate={navigate} />
 
-  <header className="p-4 bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 shadow">
+  <header className="p-4 bg-gray-100 text-gray-900 dark:bg-yellow-900 dark:text-gray-100 shadow">
     <div className="container flex justify-between h-16 mx-auto">
 
       
@@ -45,7 +45,7 @@ const Navbar = () => {
         aria-label="Back to homepage"
         className="flex items-center p-2 gap-2"
       >
-        <div className="flex items-center justify-center w-12 h-12 rounded-full bg-rose-600">
+        <div className="flex items-center justify-center w-12 h-12 rounded-full bg-red-600">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -108,7 +108,7 @@ const Navbar = () => {
              px-5 py-3 flex items-center gap-2`
           }
         >
-          📞 <span>Support</span>
+          <span>Support</span>
         </NavLink>
       </div>
 

@@ -24,7 +24,7 @@ const banners = [
 const BannerSlider = () => {
   const [index, setIndex] = useState(0);
 
-  // Auto slide
+  
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex((prev) => (prev + 1) % banners.length);
@@ -34,7 +34,7 @@ const BannerSlider = () => {
 
   return (
     <div className="relative w-full overflow-hidden bg-cover">
-      {/* Slides */}
+     
       <div
         className="flex transition-transform duration-700"
         style={{ transform: `translateX(-${index * 100}%)` }}
@@ -47,7 +47,7 @@ const BannerSlider = () => {
               className="w-full h-full object-cover"
             />
 
-            {/* Content */}
+           
             <div className="absolute top-1/2 left-10 -translate-y-1/2 text-white bg-cover">
               <span className="bg-orange-500 text-xs px-3 py-1 rounded">
                 REPUBLIC DAY SALE
@@ -60,7 +60,7 @@ const BannerSlider = () => {
         ))}
       </div>
 
-      {/* Dots */}
+      
       <div className="absolute bottom-3 w-full flex justify-center gap-2 bg-cover">
         {banners.map((_, i) => (
           <span

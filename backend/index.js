@@ -24,6 +24,82 @@ app.get('/', (req, res) => {
 app.use('/api/v3.2/auth', require('./router/auth.router'))
 app.use('/api/v3.2/note', require('./router/note.router'))
 
+
+app.post('/api/v3.2/contact', async (req, res) => {
+
+
+    const { name, email, subject, message } = req.body;
+
+    try {
+        const data = await ContactModel.insertOne({ name, email, subject, message })
+
+        let transporter = nodeMailer.createTransport({
+            service: 'gmail',
+            auth: {
+                user: "kishanchaurasiya607@gmail.com",
+                pass: process.env.APP_PASS
+            }
+        })
+
+        let messInfo = {
+            from: "kishanchaurasiya607@gmail.com",
+            to: email,
+            subject: "Thank you for Contact - kishan",
+            text: `welcome ${name}!\n Thank you for Contact - MYSHOP`
+  }
+
+        transporter.sendMail(messInfo, (error, info) => {
+            if (error) {
+                return res.send({
+                    message: "not send message",
+                    success: false
+                })
+            }
+
+            console.log(info)
+
+            res.send({
+                message: "send message successfully",
+                user: data,
+                success: true
+            })
+
+        })
+
+    } catch (error) {
+        res.send({
+            message: "not send message",
+            success: false
+        })
+    }
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 app.listen(PORTNO, () => {
     console.log(`Server is running on http://localhost:${PORTNO}`)
 })
+
+
+
+

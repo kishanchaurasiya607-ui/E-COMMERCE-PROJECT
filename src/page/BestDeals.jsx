@@ -60,7 +60,7 @@ const BestDeals = () => {
           </div>
         </div>
 
-        {/* Right banner */}
+        
         <div className="w-[220px] hidden md:block">
           <div className="h-full bg-blue-600 text-white flex flex-col items-center justify-center p-4">
             <h3 className="text-lg font-semibold">Nothing Phone (3a) Pro</h3>

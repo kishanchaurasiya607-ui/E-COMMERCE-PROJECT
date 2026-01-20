@@ -46,7 +46,7 @@ export default function BigDealsSection() {
             key={i}
             className="relative h-[230px] rounded-lg overflow-hidden bg-gradient-to-r from-blue-600 to-blue-400 text-white transform transition duration-300 hover:scale-[1.03] cursor-pointer"
           >
-            {/* TEXT */}
+          
             <div className="p-5 z-10 relative">
               <p className="text-sm opacity-90">{item.title}</p>
               <h3 className="text-xl font-semibold leading-tight">
@@ -55,7 +55,7 @@ export default function BigDealsSection() {
               <p className="text-lg font-bold mt-1">{item.price}</p>
             </div>
 
-            {/* IMAGE */}
+            
             <img
               src={item.img}
               alt={item.name}
