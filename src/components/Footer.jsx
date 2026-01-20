@@ -8,10 +8,10 @@ import {
 export default function Footer() {
   return (
     <footer className="bg-[#212121] text-gray-300 text-sm">
-      {/* TOP FOOTER */}
+      
       <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
         
-        {/* ABOUT */}
+       
         <div>
           <h3 className="text-gray-400 mb-3 uppercase text-xs">About</h3>
           <ul className="space-y-2 text-white">
@@ -24,7 +24,6 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* GROUP COMPANIES */}
         <div>
           <h3 className="text-gray-400 mb-3 uppercase text-xs">
             Group Companies
@@ -36,7 +35,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* HELP */}
+       
         <div>
           <h3 className="text-gray-400 mb-3 uppercase text-xs">Help</h3>
           <ul className="space-y-2 text-white">
@@ -47,7 +46,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* CONSUMER POLICY */}
+        
         <div>
           <h3 className="text-gray-400 mb-3 uppercase text-xs">
             Consumer Policy
@@ -64,7 +63,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* MAIL US */}
+        
         <div className="border-l border-gray-600 pl-6">
           <h3 className="text-gray-400 mb-3 uppercase text-xs">Mail Us</h3>
           <p className="text-white leading-6">
@@ -88,7 +87,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* REGISTERED OFFICE */}
+      
         <div>
           <h3 className="text-gray-400 mb-3 uppercase text-xs">
             Registered Office Address
@@ -107,7 +106,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* BOTTOM FOOTER */}
+   
       <div className="border-t border-gray-700">
         <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4 text-white">
           
