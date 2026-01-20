@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import  mobiles from "../assets/phone.jpg"
+
 const CategorySection = () => {
   return (
    <div className="bg-white border-b">
@@ -21,7 +23,7 @@ const CategorySection = () => {
      <Link to="/Mobiles">
       <a href="src/Items/Mobiles.jsx" className="flex flex-col items-center min-w-[90px] cursor-pointer group">
         <img
-          src="src/assets/phone.jpg"
+          src={mobiles}
           alt="Mobiles"
           className="w-16 h-16 rounded-xl object-cover transition-transform duration-300 group-hover:scale-110"
         />
