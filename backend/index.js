@@ -25,6 +25,9 @@ app.use('/api/v3.2/auth', require('./router/auth.router'))
 app.use('/api/v3.2/note', require('./router/note.router'))
 
 
+
+
+
 app.post('/api/v3.2/contact', async (req, res) => {
 
 
@@ -37,7 +40,7 @@ app.post('/api/v3.2/contact', async (req, res) => {
             service: 'gmail',
             auth: {
                 user: "kishanchaurasiya607@gmail.com",
-                pass: process.env.APP_PASS
+                pass: process.env.SECRETKEY
             }
         })
 

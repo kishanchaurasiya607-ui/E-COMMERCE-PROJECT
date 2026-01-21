@@ -31,6 +31,7 @@ import Fashion from './Items/Fashion'
 import Furniture from './Items/Furniture'
 import Grocery from './Items/Grocery'
 import Flight from './Items/FlightBookings'
+
 function App() {
 
   const { theme } = useTheme()
