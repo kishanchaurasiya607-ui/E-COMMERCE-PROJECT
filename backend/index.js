@@ -83,7 +83,43 @@ app.post('/api/v3.2/contact', async (req, res) => {
 
 
 
+app.post("/buy-now", async (req, res) => {
+  const user = req.body;
 
+  // ChatGPT को भेजने वाला prompt
+  const prompt = `
+  New Order Details:
+  Name: ${user.name}
+  Email: ${user.email}
+  Phone: ${user.phone}
+  Address: ${user.address}
+  Payment: ${user.payment}
+
+  Confirm order professionally.
+  `;
+
+  const response = await fetch(
+    "https://api.openai.com/v1/chat/completions",
+    {
+      method: "POST",
+      headers: {
+        "Authorization": `Bearer ${process.env.SECRETKEY}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        model: "gpt-4o-mini",
+        messages: [{ role: "user", content: prompt }],
+      }),
+    }
+  );
+
+  const data = await response.json();
+
+  res.json({
+    message: "Order placed successfully",
+    aiReply: data.choices[0].message.content,
+  });
+});
 
 
 

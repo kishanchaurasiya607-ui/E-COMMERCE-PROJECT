@@ -112,7 +112,7 @@ function EditNotesModal(props) {
             <button
               className="block max-sm:w-32 cursor-pointer rounded-lg bg-rose-900 px-5 py-3 text-sm font-medium text-white"
             >
-              Update Notes
+              SHOP NOW
             </button>
           </div>
         </form>

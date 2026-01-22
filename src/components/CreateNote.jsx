@@ -61,9 +61,15 @@ const CreateNote = () => {
           ₹ {product.price}
         </p>
 
-        <button className="mt-4 w-full flex items-center justify-center gap-2 px-4 py-2 bg-rose-500 text-white rounded">
-          🛒 Add to Cart
+        <button className="mt-3 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
+           Add to Cart
         </button>
+        <button
+           
+            className="mt-3 w-full bg-yellow-400 text-white py-2 rounded hover:bg-yellow-500"
+            >
+              Buy now
+              </button>
       </div>
     ))}
   </div>

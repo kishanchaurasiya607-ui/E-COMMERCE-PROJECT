@@ -1,3 +1,4 @@
+
 const products = [
   { id: 1, name: "Milk 1L", price: 55, img: "https://dummyimage.com/200x200/e5e7eb/000&text=Milk" },
   { id: 2, name: "Bread", price: 40, img: "https://dummyimage.com/200x200/e5e7eb/000&text=Bread" },
@@ -59,11 +60,13 @@ const Minutes = () => {
             >
               Add to Cart
             </button>
+           
             <button
-              className="mt-3 w-full bg-yellow-400 text-white py-2 rounded hover:bg-yellow-500"
+           
+            className="mt-3 w-full bg-yellow-400 text-white py-2 rounded hover:bg-yellow-500"
             >
               Buy now
-            </button>
+              </button>
           </div>
         ))}
       </div>
