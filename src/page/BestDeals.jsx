@@ -28,7 +28,7 @@ const products = [
   {
     name: "Samsung Galaxy A3",
     price: "From ₹17,999",
-    img: "https://www.gadgets360.com/samsung-galaxy-a3-2108",
+    img: "https://dummyimage.com/200x240/e5e7eb/000&text=Galaxy",
   },
 ];
 
