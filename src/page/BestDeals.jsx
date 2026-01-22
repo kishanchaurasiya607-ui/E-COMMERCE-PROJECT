@@ -1,39 +1,34 @@
-import  Apple from "../assets/Phone/Apple.jpg"
-import  Galaxy from "../assets/Phone/Galaxy.webp"
-import  Samsung from "../assets/Phone/Samsung.webp"
-import  Motorola from "../assets/Phone/Motorola.jpg"
-import  Vivo from "../assets/Phone/Vivo.jpg"
-import  Poco from "../assets/Phone/Poco.jpg"
+
 const products = [
   {
     name: "Apple iPhone 16",
     price: "From ₹55,999",
-    img: {Apple},
+    img: "https://dummyimage.com/200x240/e5e7eb/000&text=iPhone",
   },
   {
     name: "Galaxy S24 5G",
     price: "From ₹40,999",
-    img: {Galaxy},
+    img: "https://dummyimage.com/200x240/e5e7eb/000&text=Samsung",
   },
   {
     name: "Motorola G57 Power",
     price: "Just ₹13,999",
-    img: {Motorola},
+    img: "https://dummyimage.com/200x240/e5e7eb/000&text=Motorola",
   },
   {
     name: "Vivo T4x 5G",
     price: "From ₹14,999",
-    img: {Vivo},
+    img: "https://dummyimage.com/200x240/e5e7eb/000&text=Vivo",
   },
   {
     name: "Poco C75 5G",
     price: "Just ₹7,999",
-    img: {Poco},
+    img: "https://dummyimage.com/200x240/e5e7eb/000&text=Poco",
   },
   {
     name: "Samsung Galaxy A3",
     price: "From ₹17,999",
-    img: {Samsung},
+    img: "https://www.gadgets360.com/samsung-galaxy-a3-2108",
   },
 ];
 
