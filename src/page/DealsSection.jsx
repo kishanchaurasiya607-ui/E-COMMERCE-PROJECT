@@ -1,3 +1,4 @@
+import fashion from "../assets/fashion.webp"
 export default function DealsSection() {
   return (
     <section className="px-6 py-8 bg-gray-50">
@@ -69,7 +70,7 @@ export default function DealsSection() {
        
         <div className="relative rounded-md overflow-hidden">
           <img
-            src="/images/fashion-banner.jpg"
+            src={fashion}
             alt="Fashion"
             className="w-full h-full object-cover"
           />
