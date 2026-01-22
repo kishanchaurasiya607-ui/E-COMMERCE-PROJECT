@@ -59,6 +59,11 @@ const Minutes = () => {
             >
               Add to Cart
             </button>
+            <button
+              className="mt-3 w-full bg-yellow-400 text-white py-2 rounded hover:bg-yellow-500"
+            >
+              Buy now
+            </button>
           </div>
         ))}
       </div>

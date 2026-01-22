@@ -1,4 +1,5 @@
 import fashion from "../assets/fashion.webp"
+import { Link } from 'react-router-dom';
 export default function DealsSection() {
   return (
     <section className="px-6 py-8 bg-gray-50">
@@ -81,7 +82,7 @@ export default function DealsSection() {
             <p className="text-white mt-1">
               with Latest & Trendy Choices
             </p>
-            <button className="mt-4 w-fit bg-green-700 text-white px-4 py-2 rounded-md hover:bg-green-800">
+            <button  className="mt-4 w-fit bg-green-700 text-white px-4 py-2 rounded-md hover:bg-green-800">
               Shop Now →
             </button>
           </div>

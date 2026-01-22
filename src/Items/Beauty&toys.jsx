@@ -187,11 +187,16 @@ const BeautyToysProducts = () => {
                   ))}
                 </ul>
                 <button
-                  className="btn btn-primary w-full"
+                  className="mt-3 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
                   onClick={() => addToCart(product.price)}
                 >
                   Add to Cart
                 </button>
+                 <button
+              className="mt-3 w-full bg-yellow-400 text-white py-2 rounded hover:bg-yellow-500"
+            >
+              Buy now
+            </button>
               </div>
             </div>
           ))}
