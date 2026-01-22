@@ -1,5 +1,12 @@
 import { Link } from "react-router-dom";
 import  mobiles from "../assets/phone.jpg"
+import  Minutes from "../assets/Minutes.jpg"
+import  TVs from "../assets/TVs.jpg"
+import  Beauty from "../assets/Beauty.jpg"
+import  Furniture from "../assets/Furniture.jpg"
+import  Kitchen from "../assets/Kitchen.avif"
+import  Flight from "../assets/Flight.jpg"
+import  Grocery from "../assets/Grocery.jpg"
 
 const CategorySection = () => {
   return (
@@ -10,7 +17,7 @@ const CategorySection = () => {
       <Link to="/minutes">
       <a  className="flex flex-col items-center min-w-[90px] cursor-pointer group">
         <img
-          src="src/assets/istockphoto-1095986116-612x612.jpg"
+          src={Minutes}
           alt="Minutes"
           className="w-16 h-16 rounded-xl object-cover transition-transform duration-300 group-hover:scale-110"
         />
@@ -36,7 +43,7 @@ const CategorySection = () => {
       <Link to="/TVs&Appliances">
       <a href="src/Items/TVs&Appliances.jsx" className="flex flex-col items-center min-w-[90px] cursor-pointer group">
         <img
-          src="src/assets/453f15256e53bf18c80fb77021e3ccf8.jpg"
+          src={TVs}
           alt="TVs & Appliances"
           className="w-16 h-16 rounded-xl object-cover transition-transform duration-300 group-hover:scale-110"
         />
@@ -75,7 +82,7 @@ const CategorySection = () => {
      <Link to="/Beauty&toys">
       <a href="src/Items/Beauty&toys.jsx" className="flex flex-col items-center min-w-[90px] cursor-pointer group">
         <img
-          src="src/assets/download.jpg"
+          src={Beauty}
           alt="Beauty & toys"
           className="w-16 h-16 rounded-xl object-cover transition-transform duration-300 group-hover:scale-110"
         />
@@ -88,7 +95,7 @@ const CategorySection = () => {
       <Link to="/Furniture">
       <a href="src/Items/Furniture.jsx" className="flex flex-col items-center min-w-[90px] cursor-pointer group">
         <img
-          src="src/assets/images.jpg"
+          src={Furniture}
           alt="Furniture"
           className="w-16 h-16 rounded-xl object-cover transition-transform duration-300 group-hover:scale-110"
         />
@@ -101,7 +108,7 @@ const CategorySection = () => {
       <Link to="/Home&Kitchen">
       <a href="src/Items/Home&Kitchen.jsx" className="flex flex-col items-center min-w-[90px] cursor-pointer group">
         <img
-          src="src/assets/edc100124gambrel-006-66e0bc34ac150.avif"
+          src={Kitchen}
           alt="Home & Kitchen"
           className="w-16 h-16 rounded-xl object-cover transition-transform duration-300 group-hover:scale-110"
         />
@@ -114,7 +121,7 @@ const CategorySection = () => {
       <Link to="/FlightBookings">
       <a href="src/Items/FlightBookings.jsx" className="flex flex-col items-center min-w-[90px] cursor-pointer group">
         <img
-          src="src/assets/pngtree-d-illustration-of-airline-booking-app-for-buying-tickets-or-checking-image_3792552.jpg"
+          src={Flight}
           alt="Flight Bookings"
           className="w-16 h-16 rounded-xl object-cover transition-transform duration-300 group-hover:scale-110"
         />
@@ -127,7 +134,7 @@ const CategorySection = () => {
       <Link to="/Grocery">
       <a href="src/Items/Grocery.jsx" className="flex flex-col items-center min-w-[90px] cursor-pointer group">
         <img
-          src="src/assets/download (1).jpg"
+          src={Grocery}
           alt="Grocery"
           className="w-16 h-16 rounded-xl object-cover transition-transform duration-300 group-hover:scale-110"
         />
