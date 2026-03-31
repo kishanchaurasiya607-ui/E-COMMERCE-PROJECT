@@ -3,10 +3,10 @@ import { useState } from "react";
 export default function Profile() {
 
   const [profile, setProfile] = useState({
-    name: "Kishan Chaurasiya",
-    email: "kishan@gmail.com",
-    phone: "+91 9876543210",
-    gender: "Male",
+    name: "DIPTI",
+    email: "diptiagrahari797@gmail.com",
+    phone: "+91 9369557462",
+    gender: "",
     address: "Lucknow, Uttar Pradesh",
     image: localStorage.getItem("profileImage") || null,
   });
