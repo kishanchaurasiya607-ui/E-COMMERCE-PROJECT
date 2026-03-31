@@ -6,7 +6,7 @@ export default function Profile() {
     name: "DIPTI",
     email: "diptiagrahari797@gmail.com",
     phone: "+91 9369557462",
-    gender: "",
+    gender: "Female",
     address: "Lucknow, Uttar Pradesh",
     image: localStorage.getItem("profileImage") || null,
   });
