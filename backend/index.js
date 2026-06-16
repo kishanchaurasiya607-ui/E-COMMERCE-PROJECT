@@ -39,7 +39,7 @@ app.post('/api/v3.2/contact', async (req, res) => {
         let transporter = nodeMailer.createTransport({
             service: 'gmail',
             auth: {
-                user: "kishanchaurasiya607@gmail.com",
+                user: "",
                 pass: process.env.SECRETKEY
             }
         })
@@ -86,7 +86,7 @@ app.post('/api/v3.2/contact', async (req, res) => {
 app.post("/buy-now", async (req, res) => {
   const user = req.body;
 
-  // ChatGPT को भेजने वाला prompt
+  
   const prompt = `
   New Order Details:
   Name: ${user.name}
